@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 11</title>
+</head>
+<body>
+    <!--
+        Formulario - select (agrupamiento de opciones)
+
+        • Podemos crear cuadros de selección individual o de selección múltiple.
+
+        • También podemos agrupar las opciones que tiene el cuadro de selección,
+        esto tiene sentido si el cuadro de selección tiene muchos items.
+
+        • Se cuenta con un nuevo elemento llamado optgroup que agrupa un
+        conjunto de elementos option.
+    -->
+    <form action="registrardatos" method="post">
+        Seleccione una fruta o verdura:
+        <select name="articulo">
+            <optgroup label="Frutas">
+                <option value="1">Naranjas</option>
+                <option value="2">Manzanas</option>
+                <option value="3">Sandía</option>
+                <option value="4">Pera</option>
+                <option value="5">Durazno</option>
+                <option value="6">Ciruela</option>
+            </optgroup>
+
+            <optgroup label="Verduras">
+                <option value="7">Lechuga</option>
+                <option value="8">Pepino</option>
+                <option value="9">Zaballo</option>
+                <option value="10">Papas</option>
+                <option value="11">Tomates</option>
+                <option value="12">Zanahorias</option>
+                <option value="13">Rabanos</option>
+                <option value="14">Calabaza</option>
+            </optgroup>
+        </select>
+        <input type="submit" value="enviar">
+    </form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+</head>
+<body>
+    <!--
+        • Un formulario permite que el visitante al sitio cargue datos y sean
+        enviados al servidor.
+
+        • Es el medio ideal para registrar comentarios del visitante sobre el
+        sitio, solicitar productos, sacar turnos etc.
+
+        • De todos modos veremos que el lenguaje HTML solo tiene el objetivo
+        de crear el formulario. El HTML no tiene la responsabilidad de
+        registrar los datos en el servidor, esta actividad está delegada a un
+        lenguaje que se ejecute en el servidor (PHP, ASP, ASP.Net, JSP,NodeJS etc.)
+    -->
+    <form action="registrardatos" method="post">
+        Ingrese su nombre:
+        <input type="text" name="nombre" size="20">
+        <br>
+        <input type="submit" value="enviar">
+    </form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6</title>
+</head>
+<body>
+    <!--
+        • El elemento de tipo textarea nos permite el ingreso de varias líneas a
+        diferencia del cuadro de texto (input/text)
+        • Es muy utilizado cuando queremos ingresar un comentario de una
+        longitud de caracteres grande.
+    -->
+    <form action="registrardatos" method="post">
+        Ingrese su nombre:
+        <input type="text" name="nombre" size="20">
+        <br>
+        Ingrese su mail:
+        <input type="text" name="mail" size="50">
+        <br>
+        Comentarios: <br>
+        <textarea name="comentarios" cols="60" rows="5"></textarea>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
