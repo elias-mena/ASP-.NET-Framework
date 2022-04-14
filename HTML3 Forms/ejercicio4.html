@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+</head>
+<body>
+    <!--
+        Formulario - agrupamiento de controles
+
+        • El HTML dispone de un elemento llamado fieldset que solo tiene el
+        objetivo de recuadrar y agrupar un conjunto de controles de un
+        formulario.
+
+        • Debemos encerrar todos los controles a agrupar entre las marcas
+        <fieldset> y </fieldset>. Además para agregar un título a este
+        recuadro debemos agregar otro elemento HTML llamado legend.
+    -->
+    <form action="registrardatos" method="post">
+        <fieldset>
+            <legend>Datos Personales</legend>
+
+            Apellido y nombre:
+            <input type="text" name="nombre" size="30"><br>
+
+            Documento de Identidad:
+            <input type="text" name="dni" size="8"><br>
+
+            Fecha de nacimiento:
+            <input type="text" name="direccionpersona" size="12"><br>
+
+            Dirección:
+            <input type="text" name="nombre" size="30"><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos Laborales</legend>
+
+            Nombre de la empresa:
+            <input type="text" name="nombreempresa" size="30"><br>
+
+            Actividad:
+            <input type="text" name="actividad" size="50"><br>
+
+            Dirección:
+            <input type="text" name="direccionempresa" size="30"><br>
+
+        </fieldset>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

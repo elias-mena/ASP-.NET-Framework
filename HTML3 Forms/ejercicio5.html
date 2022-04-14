@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+</head>
+<body>
+    <!--
+        Formulario - controles con valores iniciales
+
+        • Un control puede aparecer cargado con un valor por defecto.
+
+        • Para inicializar un control de tipo text debemos dar un valor a la
+        propiedad value:
+            • <input type="text" value="aqui su nombre" name="nombre" size="20">
+
+        • El control aparece cargado con la cadena "aqui su nombre".
+
+        • Para inicializar un control de tipo textarea debemos indicar el dato
+        entre el comienzo y el fin de la marca:
+            • <textarea rows="10" cols="40" name="curriculum">Ingrese aqui su
+            curriculum</textarea>
+
+        • El control textarea se inicializa con la cadena "Ingrese aqui su curriculum"
+
+        • Para inicializar un control de tipo checkbox debemos activar la propiedad checked sin asignar valor:
+            • <input type="checkbox" name="java" checked>Opcion 1
+
+        • Con esto logramos que el checkbox aparezca tildado apenas se muestre el formulario.
+
+        • Para inicializar un control de tipo radio debemos definir la propiedad
+        checked sin valor, igual que un checkbox, con la salvedad que solo un
+        control de tipo radio puede tener definida esta propiedad:
+            • <input type="radio" name="estudios" value="1" checked>Opción 1<br>
+    -->
+    <form action="registrardatos.php" method="post">
+        Apellido y nombre:
+        <input type="text" name="nombre" size="30"><br>
+
+        Es mayor de edad?: <br>
+        <input type="radio" name="radio1" checked value="si">Si <br>
+        <input type="radio" name="radio1" value="no">No <br>
+
+        Telefono:
+        <input type="text" value="506-" name="telefono" size="15"><br>
+
+        <textarea name="comentarios" cols="40" rows="5">Ingrese aquí sus comentarios</textarea><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

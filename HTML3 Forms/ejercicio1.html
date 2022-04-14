@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <!--
+        Formulario - button
+
+        • El elemento button es un control visual que se puede utilizar para sustituir los controles:
+            • <input type="submit" value="Enviar">
+            • <input type="reset" value="Borrar">
+
+        • Entre otras las ventanjas de este elemento es que podemos agregar
+        imágenes dentro del botón.
+            • <button type="submit">
+
+        • Texto a mostrar dentro del botón.
+            • </button>
+
+        • Todo lo que está contenido entre las marcas de comienzo y fin del
+        elemento button aparece dentro del botón, como por ejemplo una imagen,
+        un párrafo, enfatizado de una palabra etc.
+    -->
+    <form action="registrardatos" method="post">
+        Ingrese su nombre:
+        <input type="text" name="nombre" size="20">
+        <br>
+        <button type="submit">Enviar <img src="enviar.png" alt="envio" width="100"></button>
+        <button type="reset">Borrar <img src="borrar.png" alt="borrado" width="100"></button>
+
+    </form>
+</body>
+</html>

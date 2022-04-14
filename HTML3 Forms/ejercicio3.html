@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <!--
+        Formulario - input type="file"
+
+        • El control de tipo file nos permite enviar un archivo.
+
+        • HTML solo indica al navegador que debe enviar el archivo debe haber
+        en el servidor un programa que lo almacene en una carpeta.
+
+        • Nuevamente utilizamos el elemento HTML input para definir este tipo
+        de control. En la propiedad type inicializamos con el valor file.
+        Inicializar la propiedad name también es importante ya que mediante
+        este nombre se lo recupera.
+
+        • <form method="post" action="/registrardato"
+        enctype="multipart/form-data">
+            • Con esto indicamos al navegador que el formulario almacena uno o más
+            archivos que deben ser enviados.
+    -->
+    <form action="registrardatos" method="post" enctype="multipart/form-data">
+        Ingrese su nombre:
+        <input type="text" name="nombre" size="20">
+        <br>
+        Seleccione la foto:
+        <input type="file" name="foto">
+        <br>
+        <input type="submit" value="enviar">
+    </form>
+</body>
+</html>
