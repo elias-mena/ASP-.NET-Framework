@@ -54,9 +54,8 @@ namespace SQLConnection
                 TextBoxMail.Text = row[2].ToString();
             }
             else
-            {
                 Label1.Text = "No existe un usuario con ese nombre";
-            }
+
             conexion.Close();
         }
 
@@ -77,14 +76,11 @@ namespace SQLConnection
             NpgsqlCommand comando = new NpgsqlCommand(query, conexion);
 
             int cantidad = comando.ExecuteNonQuery();
-            if (cantidad == 1)
-            {
-                Label2.Text = "Datos modificados";
-            }
-            else
-            {
+            if (cantidad == 1)            
+                Label2.Text = "Datos modificados";            
+            else            
                 Label2.Text = "No existe el usuario";
-            }
+
             conexion.Close();
         }
     }

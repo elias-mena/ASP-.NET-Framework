@@ -35,14 +35,11 @@ namespace SQLConnection
 
 
             int cantidad = comando.ExecuteNonQuery();
+
             if (cantidad == 1)
-            {
                 Label1.Text = "Se borró el usuario";
-            }
             else
-            {
                 Label1.Text = "No existe un usuario con dicho nombre";
-            }
             conexion.Close();
         }
     }

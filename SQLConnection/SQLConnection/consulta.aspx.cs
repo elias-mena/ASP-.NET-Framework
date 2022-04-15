@@ -43,10 +43,8 @@ namespace SQLConnection
                 DataRow row = tabla.Rows[0];
                 Label1.Text = $"Clave: {row[1]} <br> Mail: {row[2]}";
             }
-            else
-            {
-                Label1.Text = "No existe un usuario con ese nombre";
-            }
+            else            
+                Label1.Text = "No existe un usuario con ese nombre";            
             conexion.Close();
         }
     }
